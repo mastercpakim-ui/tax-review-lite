@@ -1,13 +1,13 @@
 ---
 name: tax-review-lite
-description: 세무 검토 가벼운 판. 법인세·소득세·부가가치세·상속증여세·지방세·가산세 질문에 걸리는 세목을 먼저 판정하고, 국가법령 커넥터로 조문·예규 원문을 열어 링크와 함께 검토의견을 쓴다. "세무 검토", "세법 질문", "가산세", "예규 찾아줘", "익금불산입", "세액공제" 같은 요청에 쓴다.
+description: 법인세·소득세·부가가치세·상속증여세·지방세·가산세 질문에 걸리는 세목을 먼저 판정하고, 국가법령 커넥터로 조문·예규 원문을 열어 링크와 함께 검토의견을 쓴다. "세무 검토", "세법 질문", "가산세", "예규 찾아줘", "익금불산입", "세액공제" 같은 요청에 쓴다.
 license: CC-BY-NC-4.0
 metadata:
   author: NuttyCPA Jihye
-  version: "1.1"
+  version: "1.2"
 ---
 
-# 세무 검토 (가벼운 판)
+# 세무 검토
 
 만든 사람: NuttyCPA Jihye · 라이선스: CC BY-NC 4.0 · https://github.com/mastercpakim-ui/tax-review-lite
 
