@@ -1,4 +1,4 @@
-# tax-review-lite: 세무 검토 스킬
+# tax-review-pro: 세무 검토 스킬
 
 Claude에게 세무 질문을 하면 **걸리는 세목부터 판정하고, 법령·예규 원문을 직접 열어, 문장마다 클릭 가능한 근거 링크를 붙여** 답하게 하는 업무 지시서(Claude 스킬)입니다. 초안을 쓴 뒤 **독립 검토자 1명**이 원문과 다시 대조합니다.
 
@@ -73,9 +73,9 @@ https://mcp.gomdori.app/law?oc=honggildong
 
 ### 3. 스킬 받기
 
-아래 링크를 누르면 최신판 `tax-review-lite.zip`이 바로 받아집니다.
+아래 링크를 누르면 최신판 `tax-review-pro.zip`이 바로 받아집니다.
 
-**[tax-review-lite.zip 받기](https://github.com/mastercpakim-ui/tax-review-lite/releases/latest/download/tax-review-lite.zip)**
+**[tax-review-pro.zip 받기](https://github.com/mastercpakim-ui/tax-review-pro/releases/latest/download/tax-review-pro.zip)**
 
 > **주의**: 이 페이지 위쪽의 초록색 **Code → Download ZIP** 버튼으로 받은 파일은 폴더 구조가 달라 스킬로 올라가지 않습니다. 반드시 위 링크로 받으세요.
 
@@ -83,7 +83,7 @@ https://mcp.gomdori.app/law?oc=honggildong
 
 1. **Settings > Capabilities**에서 **Code execution and file creation**을 켭니다.
 2. **Customize > Skills**로 갑니다.
-3. **+** → **Create skill** → **Upload a skill**을 누르고 받은 `tax-review-lite.zip`을 선택합니다.
+3. **+** → **Create skill** → **Upload a skill**을 누르고 받은 `tax-review-pro.zip`을 선택합니다.
    - zip을 풀지 말고 그대로 올립니다.
 
 ### 5. 써 보기
@@ -99,7 +99,9 @@ https://mcp.gomdori.app/law?oc=honggildong
 
 ### 업데이트
 
-위 링크로 새로 받은 뒤, **Customize > Skills**에서 기존 `tax-review-lite`를 지우고 다시 올립니다.
+위 링크로 새로 받은 뒤, **Customize > Skills**에서 기존 `tax-review-pro`를 지우고 다시 올립니다.
+
+> 예전 이름 `tax-review-lite`로 설치하셨다면, 그 스킬을 지우고 `tax-review-pro.zip`을 새로 올리세요. 내용은 이어지는 같은 스킬이고 이름만 바뀌었습니다.
 
 ---
 
@@ -115,7 +117,7 @@ https://mcp.gomdori.app/law?oc=honggildong
 2. Claude Code(또는 데스크톱 앱 Code 탭의 로컬 세션)에 아래 한 줄을 붙여 넣습니다. 설치는 Claude가 이 README의 「Claude가 할 일」대로 처리합니다.
 
 ```
-https://github.com/mastercpakim-ui/tax-review-lite 설치해줘
+https://github.com/mastercpakim-ui/tax-review-pro 설치해줘
 ```
 
 3. (권장) 국세청 예규를 본문까지 검색하려면 lawkit도 붙입니다. Python 3.10 이상이 필요합니다.
@@ -124,12 +126,12 @@ https://github.com/mastercpakim-ui/tax-review-lite 설치해줘
 https://github.com/mastercpakim-ui/lawkit 설치해줘
 ```
 
-4. Claude Code를 완전히 종료했다가 다시 켜고, `/tax-review-lite`로 부르거나 세무 질문을 하면 됩니다.
+4. Claude Code를 완전히 종료했다가 다시 켜고, `/tax-review-pro`로 부르거나 세무 질문을 하면 됩니다.
 
 ### 업데이트
 
 ```
-tax-review-lite 업데이트해줘
+tax-review-pro 업데이트해줘
 ```
 
 ---
@@ -157,13 +159,14 @@ tax-review-lite 업데이트해줘
 - 사용자 스킬 폴더: Windows `%USERPROFILE%\.claude\skills\`, macOS·Linux `~/.claude/skills/`. 없으면 만든다.
 
 **Step 2. 받기**
-- 이 저장소의 최신 Release 자산 `tax-review-lite.zip`을 받아 임시 폴더에 푼다. 받을 수 없으면 저장소를 `git clone`하고 그 안의 `tax-review-lite/` 폴더를 쓴다.
+- 이 저장소의 최신 Release 자산 `tax-review-pro.zip`을 받아 임시 폴더에 푼다. 받을 수 없으면 저장소를 `git clone`하고 그 안의 `tax-review-pro/` 폴더를 쓴다.
 
 **Step 3. 설치·교체**
-- 스킬 폴더에 `tax-review-lite`가 이미 있으면, 그 `SKILL.md` 머리말의 `metadata.version`과 새 판을 비교해 사용자에게 알린다. 교체 전에 기존 폴더를 `tax-review-lite.bak-<날짜>`로 옮겨 둔다고 말하고, 사용자가 동의하면 교체한다.
-- 없으면 `tax-review-lite/` 폴더를 그대로 복사한다. 폴더 이름은 바꾸지 않는다(스킬 이름과 같아야 한다).
+- 스킬 폴더에 예전 이름 `tax-review-lite`가 있으면, 이름만 바뀐 같은 스킬이라고 알리고 `tax-review-lite.bak-<날짜>`로 옮겨 둔다고 말한 뒤 사용자가 동의하면 옮긴다(두 스킬이 함께 있으면 둘 다 불릴 수 있다).
+- 스킬 폴더에 `tax-review-pro`가 이미 있으면, 그 `SKILL.md` 머리말의 `metadata.version`과 새 판을 비교해 사용자에게 알린다. 교체 전에 기존 폴더를 `tax-review-pro.bak-<날짜>`로 옮겨 둔다고 말하고, 사용자가 동의하면 교체한다.
+- 없으면 `tax-review-pro/` 폴더를 그대로 복사한다. 폴더 이름은 바꾸지 않는다(스킬 이름과 같아야 한다).
 
 **Step 4. 검증**
-- `<스킬 폴더>/tax-review-lite/SKILL.md`가 있고, 머리말의 `name`이 `tax-review-lite`인지 확인한다.
+- `<스킬 폴더>/tax-review-pro/SKILL.md`가 있고, 머리말의 `name`이 `tax-review-pro`인지 확인한다.
 - korean-law MCP(플러그인 또는 MCP 등록)가 있는지 확인한다. 없으면 README 「Claude Code에서 설치」 1번을 안내한다.
 - 사용자에게 Claude Code를 완전히 종료했다가 다시 켜라고 안내한다.

@@ -1,15 +1,15 @@
 ---
-name: tax-review-lite
+name: tax-review-pro
 description: 법인세·소득세·부가가치세·상속증여세·지방세·가산세 질문에 걸리는 세목을 먼저 판정하고, 국가법령 커넥터로 조문·예규 원문을 열어 링크와 함께 검토의견을 쓴다. "세무 검토", "세법 질문", "가산세", "예규 찾아줘", "익금불산입", "세액공제" 같은 요청에 쓴다.
 license: CC-BY-NC-4.0
 metadata:
   author: NuttyCPA
-  version: "1.3"
+  version: "1.4"
 ---
 
 # 세무 검토
 
-만든 사람: NuttyCPA · 라이선스: CC BY-NC 4.0 · https://github.com/mastercpakim-ui/tax-review-lite
+만든 사람: NuttyCPA · 라이선스: CC BY-NC 4.0 · https://github.com/mastercpakim-ui/tax-review-pro
 
 세무 질문에 답할 때 따르는 순서다. 결과는 검토 참고자료이고, 최종 판단과 고객 안내는 사람이 한다. 모든 답변 끝에 단서 문구(답변 형식 참조)를 붙인다. **목표 시간은 10분 이내**다. 시간은 글 길이가 아니라 도구 호출 횟수에서 나온다. 그래서 조회는 묶어서 한 번에 부르고, 검토자 1명이 마지막에 원문과 대조한다. 검토자는 빼지 않는다.
 
